@@ -41,7 +41,7 @@ int main() {
     std::cout << "Enter destination word: ";
     std::cin >> end;
 
-    std::transform(start.begin(), start.end(), start.begin(), ::tolower);
+    std::transform(start.begin(), start.end(), start.begin(), ::tolower); //把字符都转换成小写
     std::transform(end.begin(), end.end(), end.begin(), ::tolower);
     auto const ladders = generateWordLadders(dict, start, end);
 
